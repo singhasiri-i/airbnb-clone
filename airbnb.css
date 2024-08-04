@@ -1,0 +1,319 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;    
+}
+
+/* แถบดำด้านบน */
+aside[class="welcome"] {
+    height: 20px;
+    padding: 20px 40px;
+    text-align: center;
+    background-color: #000000;
+}
+a[class="welcome"]:link,
+a[class="welcome"]:visited {
+    color: #DDDDDD;
+}
+
+/* หน้าแรก */
+header {
+    display: flex;
+    flex-direction: column;
+    height: 725px;
+    padding: 0 80px;
+    background-image: url(./airbnb_img/Background\ Image.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* navigation bar */
+.nav {
+    display: flex;
+    flex: 1;
+    max-height: 80px;
+    place-items: start;
+    flex-wrap: wrap;
+}
+.airbnb-logo {
+    display: flex;
+    flex: auto;
+    width: 30%;
+    margin: auto;
+}
+.a-logo {
+    display: inline-flex;
+    align-items: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+.home-logo {
+    display: flex;
+    flex: auto;
+    width: 30%;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.home-logo>a {
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+.home-logo>a:hover {
+    border-bottom: 1px solid #FFFFFF;
+}
+.setting {
+    display: flex;
+    flex: auto;
+    width: 30%;
+    justify-content: end;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.setting>a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.setting>a:hover {
+    border: none;
+    border-radius: 110px;
+    background-color: #5E8BA3;
+}
+.nav-btn {
+    height: 42px;
+    width: 77px;
+    border: none;
+    border-radius: 110px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+/* search bar */
+.search {
+    display: flex;
+    width: 850px;
+    height: 66px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border-radius: 110px;
+}
+.search>div {
+    border-right: 1px solid #dadada;
+    margin: auto;
+    width: 185px;
+    padding-left: 25px;
+}
+.search>div:first-child {
+    width: 18em;
+    margin-left: 20px;
+}
+.search>div:nth-child(4) {
+    border-right: none;
+    padding-right: 10px;
+    width: 8em;
+}
+.search>div:last-child {
+    border-right: none;
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+    width: 45px;
+    height: 45px;
+}
+.search>div>a {
+    color: #000000;
+    text-decoration: none;
+}
+.search>div>a>input {
+    border: none;
+    background: transparent;
+    width: 85%;
+}
+.search-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: #fa215b;
+}
+.search-btn:hover {
+    cursor: pointer;
+    background-color: #DC0F63;
+}
+.search>div:nth-child(-n+4):hover {
+    border-radius: 110px;
+    border-right: none;
+    background-color: #E7E7E7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* banner and explore */
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 625px;
+    margin: auto;
+    margin-left: 0;
+}
+.banner>span {
+    font-size: 58px;
+    font-weight: bold;
+    color: #FFFFFF;
+    width: 400px;
+}
+.explore {
+    width: 155px;
+    height: 32px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* All sections */
+section {
+    display: block;
+    padding: 0 80px;
+    margin: 0;
+    margin-top: 50px;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    padding: 0;
+}
+li {
+    display: flex;
+    list-style: none;
+}
+section a {
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 0 13px 0 0;
+    color: #000000;
+}
+section img {
+    border-radius: 10px;
+}
+.topic-name {
+    font-size: 32px;
+    font-weight: bold;
+}
+section span>b {
+    display: block;
+}
+
+/* District Section list */
+
+.district-list>a {
+    width: 25%;
+    margin: 15px 0 0;
+}
+.district-list li {
+    align-items: center;
+}
+.district-list img {
+    width: 70px;
+    height: 70px;
+}
+.district-list span {
+    max-width: 130px;
+    margin-left: 20px;
+}
+
+/* Accomodation Section */
+.accom-list>a {
+    width: 25%;
+    font-size: 18px;
+    font-weight: bold;
+}
+.accom-list img {
+    width: auto;
+}
+.accom-list li {
+    flex-direction: column;
+}
+
+/* Experience Section */
+.experience {
+    padding: 50px 80px;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.experience a {
+    width: 33.33%;
+}
+.experience li {
+    flex-direction: column;
+    color: white;
+    font-size: 14px;
+}
+.experience img {
+    width: auto;
+}
+.exp-list b {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+/* Become Host */
+.become-host {
+    margin-bottom: 50px;
+}
+.host-list>a {
+    width: 33.33%;
+    font-weight: bold;
+}
+.host-list img {
+    width: auto;
+}
+.host-list li {
+    flex-direction: column;
+}
+
+/* Footer */
+footer {
+    background-color: #F7F7F7;
+    border-top: 1px solid #DDDDDD;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.footer-list {
+    display: flex;
+    margin-top: -35px;
+    margin-bottom: -35px;
+}
+.footer-list ul {
+    display: block;
+    width: 25%;
+    padding-right: 13px;
+    box-sizing: border-box;
+    line-height: 1.6rem;
+}
+.footer-list b {
+    font-size: 12px;
+}
+/* Sub-footer */
+.sub-footer>div {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #CECECE;
+    padding-top: 10px;
+}
